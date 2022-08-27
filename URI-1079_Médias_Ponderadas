@@ -1,0 +1,17 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    int N;
+    float valor1, valor2, valor3, soma, media;
+    scanf("%d", &N);
+    
+    while(N > 0){
+        scanf("%f %f %f", &valor1, &valor2, &valor3);
+        soma = (2*valor1) + (3*valor2) + (5*valor3);
+        media = soma / 10;
+        printf("%.1f\n", media);
+        N--;
+    }
+    return 0;
+}

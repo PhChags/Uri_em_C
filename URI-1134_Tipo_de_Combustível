@@ -1,0 +1,23 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    int i, comb = 0, alc = 0, gas = 0, dies = 0;
+    while (i != 4) {
+        scanf("%d", &i);
+        if (i == 1) {
+            alc += 1;
+            }else if (i == 2) {
+                gas += 1;
+            }else if (i == 3) {
+                dies += 1;
+            }
+        }
+        
+        printf("MUITO OBRIGADO\n");
+        printf("Alcool: %d\n", alc);
+        printf("Gasolina: %d\n", gas);
+        printf("Diesel: %d\n", dies);
+
+    return 0;
+}

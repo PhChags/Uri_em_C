@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+int main(){
+
+    int n, indice;
+    scanf("%d", &n);
+
+    for(indice=1; indice<=n;indice=indice+2){
+        printf("%d\n", indice);
+    }
+
+    return 0;
+}

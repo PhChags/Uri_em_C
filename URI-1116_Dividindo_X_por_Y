@@ -1,0 +1,20 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    int x, y, n;
+    float z;
+    scanf("%d", &n);
+    
+    while(n--){
+        scanf("%d %d", &x, &y);
+        if (y == 0)
+            printf("divisao impossivel\n");
+        else{
+            z = (x * 1.0)/ y;
+            printf("%.1f\n", z);
+        }
+    }
+ 
+    return 0;
+}

@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+
+    float numero, total, media;
+    int valores,count;
+    media, total, valores = 0, 0, 0;
+    for(count=1;count <= 6;count+=1)
+    {
+    scanf("%f",&numero);
+        if(numero>=0)
+        {   
+        valores+=1;
+        total += numero;
+        }
+    }
+    media = total/valores;
+    printf("%d valores positivos\n%.1f\n",valores, media);
+
+    return 0;
+}

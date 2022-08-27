@@ -1,0 +1,13 @@
+#include<stdio.h>]
+
+int main(){
+
+    char nome;
+    double $_fixo, montante;
+
+    scanf("%S %lf %lf", &nome, &$_fixo, &montante);
+
+    printf("TOTAL = R$ %.2lf\n", ($_fixo+montante*0.15));
+    
+    return 0;
+}

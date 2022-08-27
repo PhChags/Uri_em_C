@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+int main() {
+
+    int km_rodados;
+    float litros_consumidos;
+
+    scanf("%d %f", &km_rodados, &litros_consumidos);
+
+    printf("%.3f km/l\n", km_rodados/litros_consumidos);
+
+    return 0;
+}

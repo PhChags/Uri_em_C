@@ -1,0 +1,18 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    int num, maior = 0, pos, count = 1;
+    
+    while(count < 101){
+        scanf("%d", &num);
+        if(num > maior){
+            pos = count;
+            maior = num;
+        }
+        count++;
+    }
+    printf("%d\n%d\n", maior, pos);
+ 
+    return 0;
+}

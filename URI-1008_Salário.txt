@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int main(){
+
+    int id_funcionario, horas;
+    double $_por_hora;
+
+    scanf("%d %d %lf", &id_funcionario, &horas, &$_por_hora);
+
+    printf("NUMBER = %d\n", id_funcionario);
+    printf("SALARY = U$ %.2lf\n", (horas*$_por_hora));
+    
+    return 0;
+}

@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+void grenais (int *emp, int *inte, int *gre){
+    int golI, golG;
+    scanf("%d %d", &golI, &golG);
+    if (golI == golG)
+        *emp += 1;
+    else if (golI > golG){
+        *inte += 1;
+    } else
+        *gre += 1;
+}
+int main(void) {
+   
+    int parametro = 1, count = 0, emp = 0, inte = 0, gre = 0;
+    
+    while(parametro == 1){
+        grenais(&emp, &inte, &gre);
+        do{
+            printf("Novo grenal (1-sim 2-nao)\n");
+            scanf("%d", &parametro);
+        }while(parametro != 1 && parametro != 2);
+        count += 1;
+    }
+    printf("%d grenais\n", count);
+    printf("Inter:%d\n", inte);
+    printf("Gremio:%d\n", gre);
+    printf("Empates:%d\n", emp);
+    if(emp > inte && emp > gre)
+        printf("Nao houve vencedor\n");
+    else if(inte > gre){
+        printf("Inter venceu mais\n");
+    } else
+        printf("Gremio venceu mais\n");
+
+    return 0;
+}

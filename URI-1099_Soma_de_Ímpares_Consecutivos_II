@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int soma_impar(int x, int y){
+    int soma = 0;
+    
+    if(x > y){
+        for(x -= 1; x > y; x--)
+            if(x % 2 == 1)
+                soma += x;
+    }else
+        for(y -= 1; y > x; y--)
+            if(y % 2 == 1)
+                soma += y;
+    return soma;
+}
+int main(void) {
+ 
+    int N, X, Y;
+    scanf("%d", &N);
+    
+    while(N--){
+        scanf("%d %d", &X, &Y);
+        printf("%d\n", soma_impar(X, Y));
+    }
+ 
+    return 0;
+}

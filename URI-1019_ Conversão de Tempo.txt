@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+int main() {
+
+    int entrada, horas_segundos, horas, minutos , segundos;
+
+    horas_segundos = 3600;
+
+    scanf("%d", &entrada);
+
+    horas = entrada/horas_segundos;
+    minutos = (entrada-(horas_segundos*horas))/60;
+    segundos = (entrada-(horas_segundos*horas)-(minutos*60));
+
+    printf("%d:%d:%d\n",horas,minutos,segundos);
+
+    return 0;
+}

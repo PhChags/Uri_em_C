@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+
+    int numero,valores,count;
+    valores = 0;
+
+    for(count=1;count<=5;count++)
+    {
+    scanf("%d",&numero);
+        if(numero%2==0)
+        {   
+        valores++;
+        }
+    }
+    printf("%d valores pares\n",valores);
+
+    return 0;
+}

@@ -1,0 +1,11 @@
+#include<stdio.h>
+
+int main(){
+
+    int n = 100, indice;
+    for(indice=2; indice<=n;indice=indice+2){
+        printf("%d\n", indice);
+    }
+
+    return 0;
+}

@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void){
+    
+    char typ;
+    int n, c = 0, r = 0,  s = 0, soma = 0, qnt;
+    scanf("%d", &n);
+    
+    while(n--){
+        scanf("%d %c", &qnt, &typ);
+        soma += qnt;
+        if (typ == 'C')
+            c += qnt;
+        else 
+            if (typ == 'R')
+                r += qnt;
+            else 
+                s += qnt;
+    }
+    
+    printf("Total: %d cobaias\n", soma);
+    printf("Total de coelhos: %d\n", c);
+    printf("Total de ratos: %d\n", r);
+    printf("Total de sapos: %d\n", s);
+    printf("Percentual de coelhos: %.2f %%\n", (c * 100.0) / soma);
+    printf("Percentual de ratos: %.2f %%\n", (r * 100.0) / soma);
+    printf("Percentual de sapos: %.2f %%\n", (s * 100.0) / soma);
+}
